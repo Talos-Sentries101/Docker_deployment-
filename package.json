@@ -1,0 +1,44 @@
+{
+  "name": "letushack",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/init-db.js",
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "reset:challenges": "node scripts/reset-challenges.js",
+    "seed:leaderboard": "node scripts/seed-leaderboard.js",
+    "init:db": "node scripts/init-db.js",
+    "test:notifications": "node scripts/test-notifications.js",
+    "test:docker": "node scripts/test-docker.js",
+    "test:api": "node scripts/test-api-endpoints.js",
+    "cleanup:containers": "node scripts/cleanup-containers.js"
+  },
+  "dependencies": {
+    "@stackframe/stack": "^2.8.41",
+    "bcryptjs": "^2.4.3",
+    "dockerode": "^4.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.344.0",
+    "next": "15.5.4",
+    "pg": "^8.11.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/dockerode": "^3.3.23",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/pg": "^8.15.6",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
+    "dotenv": "^17.2.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5"
+  }
+}
